@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 
 const app = express();
-const PORT = 3000; // 원하는 포트 번호로 변경 가능
+const PORT = 3015; // 원하는 포트 번호로 변경 가능
 
 // 정적 파일 제공 (HTML, CSS, JS)
 app.use(express.static(path.join(__dirname, 'public')));
