@@ -12,8 +12,7 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-// 서버 시작
-app.listen(PORT, () => {
-    console.log(`서버가 http://localhost:${PORT} 에서 실행 중입니다.`);
+// 서버 시작 (0.0.0.0으로 수정하여 외부에서도 접근 가능)
+app.listen(PORT, '0.0.0.0', () => {
+    console.log(`서버가 http://0.0.0.0:${PORT} 에서 실행 중입니다.`);
 });
-
