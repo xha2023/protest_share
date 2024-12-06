@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "start": "node server.js",  // start 스크립트 추가
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
